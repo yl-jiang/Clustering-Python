@@ -164,20 +164,9 @@ def main(input_x):
 
 
 if __name__ == '__main__':
-    import pickle
-    Aggregation = r'D:\Data\ML\clustering\Aggregation.txt'
-    Flame = r'D:\Data\ML\clustering\Flame.txt'
-    Pathbased = r'D:\Data\ML\clustering\Pathbased.txt'
-    R15 = r'D:\Data\ML\clustering\R15.txt'
-    Spiral = r'D:\Data\ML\clustering\Spiral.txt'
     Compound = r'D:\Data\ML\clustering\Compound.txt'
-    D31 = r'D:\Data\ML\clustering\D31.txt'
-    Jain = r'D:\Data\ML\clustering\Jain.txt'
-    with open(r'D:\Programs\paper\deepgraph\feature_extract\data\mnist.pkl', 'rb') as f:
-        mnist = pickle.load(f)
-        mnist = mnist[np.random.choice(mnist.shape[0], 1000)]
-    raw_data = np.loadtxt(Compound, delimiter='	', usecols=[0, 1])
 
+    raw_data = np.loadtxt(Compound, delimiter='	', usecols=[0, 1])
     main(mnist)
 
 
