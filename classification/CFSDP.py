@@ -165,7 +165,6 @@ def main(input_x):
 
 if __name__ == '__main__':
     Compound = r'D:\Data\ML\clustering\Compound.txt'
-
     raw_data = np.loadtxt(Compound, delimiter='	', usecols=[0, 1])
     main(raw_data)
 
