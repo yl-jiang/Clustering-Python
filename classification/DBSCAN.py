@@ -8,10 +8,6 @@ import matplotlib.pyplot as plt
 import collections
 
 
-Compound = r'D:\Data\ML\clustering\Compound.txt'
-raw_data = np.loadtxt(Compound, delimiter='	', usecols=[0, 1])
-
-
 # 计算任意两点之间的欧氏距离,并存储为矩阵
 def caldistance(raw_data):
     distance = np.zeros(shape=(len(raw_data), len(raw_data)))
@@ -141,5 +137,7 @@ def main(raw_data):
     class_list = assign_class(density_dict, core_point, border_point, data_length, class_list)
     show_result(class_list, raw_data)
 
-
-main(raw_data)
+if __name__ == '__main__'
+    Compound = r'D:\Data\ML\clustering\Compound.txt'
+    raw_data = np.loadtxt(Compound, delimiter='	', usecols=[0, 1])
+    main(raw_data)
