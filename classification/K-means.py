@@ -8,10 +8,6 @@ import matplotlib.pyplot as plt
 import collections
 
 
-Compound = r'D:\Data\ML\clustering\Compound.txt'
-raw_data = np.loadtxt(Jain, delimiter='	', usecols=[0, 1])
-
-
 def classification(k, data_length):
     class_list = np.array([-1 for _ in range(data_length)])
     class_list_temp = np.array([-2 for _ in range(data_length)])
@@ -56,6 +52,8 @@ def main(raw_data):
     class_list, center_coordinate = classification(k, data_length)
     show_result(class_list, raw_data, center_coordinate)
 
-
-main(raw_data)
+if __name__ == '__main__'
+    Compound = r'D:\Data\ML\clustering\Compound.txt'
+    raw_data = np.loadtxt(Compound, delimiter='	', usecols=[0, 1])
+    main(raw_data)
 
