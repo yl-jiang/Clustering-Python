@@ -1,4 +1,3 @@
-<
 import numpy as np
 import collections
 
@@ -141,4 +140,3 @@ if __name__ == '__main__':
     data = np.loadtxt(data_path, delimiter='	', usecols=[0, 1], dtype=np.float32)
     centers, classes = kmeans_plus_plus(data, 7)
     show_result(classes, data, centers)
->
